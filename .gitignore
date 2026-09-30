@@ -1,0 +1,39 @@
+# Environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+ENV/
+env/
+
+# Build and Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project specific
+PATCH.md
+temp.md
+data/unprocessed/*.csv
+data/unprocessed/*.json
+data/processed/*.db
+data/quarantine/*.csv
+!data/unprocessed/.gitkeep
+!data/processed/.gitkeep
+!data/quarantine/.gitkeep
