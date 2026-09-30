@@ -18,9 +18,14 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
     df.columns = (
         df.columns.str.strip()
         .str.lower()
+        .str.replace(r"-", "_", regex=True)
         .str.replace(r"[^\w\s]", "", regex=True)
         .str.replace(r"\s+", "_", regex=True)
     )
+
+    # In case duplicate columns arrived (e.g. concatenated without standardizing first)
+    if df.columns.duplicated().any():
+        df = df.loc[:, ~df.columns.duplicated()]
 
     # Required columns map to prevent KeyError on messy data
     required_cols = [
