@@ -11,7 +11,7 @@ outperformed the required benchmark.
 
 ### ETL Pipeline Output (100,000 Records)
 
-![Pipeline Run](../00_images/v0.2.0/pipeline-run.jpeg)
+![Pipeline Run](../00_images/v0.1.1/pipeline-run.jpeg)
 
 **Key Takeaways:**
 
@@ -22,6 +22,6 @@ outperformed the required benchmark.
 
 ### Test Execution
 
-![Pytest](../00_images/v0.2.0/pytest.jpeg)
+![Pytest](../00_images/v0.1.1/pytest.jpeg)
 
 ---
